@@ -129,6 +129,10 @@ void updateParanthesesPosition(int startingPosition){
 }
 void calculate(){
   //
+  for (unsigned int i = 0; i < calculationSentence.size(); i++) {
+    cout << calculationSentence[i];
+  }
+  cout << endl;
   if (operation_left(0, calculationSentence.size()) == true && bothSides(0, calculationSentence.size())) {
     //
     for (int i = 0; i < calculationSentence.size(); i++) {
